@@ -64,16 +64,18 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
 }
 
 .webtoon .season {
     position: relative;
     text-align: center;
+    width: 100%;
+    max-width: 400px; /* Limit width for individual items */
 }
 
 .webtoon .season img {
     width: 100%;
-    max-width: 400px; /* Ensures images scale responsively */
     height: auto;
     border-radius: 8px;
     display: block;
@@ -116,4 +118,34 @@ footer .social-links a {
 
 footer .social-links a:hover {
     color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .webtoon h2 {
+        font-size: 28px;
+    }
+
+    .webtoon .seasons {
+        gap: 10px;
+    }
+
+    .webtoon .season button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
 }
