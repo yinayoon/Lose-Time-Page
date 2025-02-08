@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #1e90ff;
+}
+
+/* Main Banner */
+.main-banner {
+    position: relative;
+    text-align: center;
+}
+
+.main-banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Webtoon Section */
+.webtoon {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.webtoon h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.webtoon .seasons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.webtoon .season {
+    position: relative;
+    text-align: center;
+}
+
+.webtoon .season img {
+    width: 100%;
+    max-width: 400px; /* Ensures images scale responsively */
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+.webtoon .season button {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    padding: 10px 20px;
+    border: none;
+    background-color: #1e90ff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.webtoon .season button:hover {
+    background-color: #000;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+footer .social-links a {
+    color: #1e90ff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #fff;
+}
